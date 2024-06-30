@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: darkblue;
+            margin: 0;
+            overflow: hidden;
+        }
+        #container {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            height: 100vh;
+        }
+        #title {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #bubble {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: conic-gradient(
+                from 0deg,
+                red,
+                orange,
+                yellow,
+                green,
+                blue,
+                indigo,
+                violet,
+                red
+            );
+            border-radius: 50%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">ericx00, welcome</h1>
+        <div id="bubble"></div>
+        <p>Line 1: This is the first line.</p>
+        <p>Line 2: The bubble adds a touch of magic.</p>
+        <p>Line 3: As you move your cursor, watch it follow.</p>
+        <p>Line 4: The colors shift, creating a mesmerizing effect.</p>
+        <p>Line 5: Feel free to explore!</p>
+        <p>Line 6: Thanks for visiting ericx00.</p>
+    </div>
+    <script>
+        const bubble = document.getElementById("bubble");
+        document.addEventListener("mousemove", (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            bubble.style.left = x + "px";
+            bubble.style.top = y + "px";
+        });
+    </script>
+</body>
+</html>
