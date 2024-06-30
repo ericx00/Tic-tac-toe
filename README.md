@@ -1,4 +1,4 @@
-Behold the most entry level for all entry level programmers.
+Behold the most entry level project for all entry level programmers.
 This repository will try to bring forth the skills of programming by creating the game TIC-TAC-TOE in various  programming languages
 
 
